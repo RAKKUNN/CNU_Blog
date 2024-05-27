@@ -5,7 +5,7 @@ import useGetPostList from '../queries/useGetPostList.ts';
 const Home = () => {
   const { data: postList = [], isError, isLoading } = useGetPostList();
   if (isLoading) {
-    return <div>...불러오는 중...</div>;
+    return <div>..불러오는 중..</div>;
   }
   if (postList.length === 0 || isError) {
     return <NoPostList />;
