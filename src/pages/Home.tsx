@@ -1,13 +1,13 @@
 import PostListItem from '../components/PostListItem';
 import NoPostList from '../components/NoPostList';
-import useGetPostList from "../queries/useGetPostList.ts";
+import useGetPostList from '../queries/useGetPostList.ts';
 
 const Home = () => {
-  const {data: postList = [], isError, isLoading} = useGetPostList();
+  const { data: postList = [], isError, isLoading } = useGetPostList();
   if (isLoading) {
-    return <div>...불러오는 중...</div>
+    return <div>...불러오는 중...</div>;
   }
-  if (postList.length === 0) {
+  if (postList.length === 0 || isError) {
     return <NoPostList />;
   }
 
