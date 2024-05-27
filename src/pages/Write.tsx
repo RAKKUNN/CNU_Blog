@@ -107,7 +107,7 @@ const Write = () => {
       setContents(post?.contents);
       setTag(post?.tag);
     }
-  }, []);
+  }, [isSuccessfetchPost, post]);
 
   const clickConfirm = () => {
     if (!title || !contents) {
