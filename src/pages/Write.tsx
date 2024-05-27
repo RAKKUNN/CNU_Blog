@@ -1,7 +1,7 @@
 import { ChangeEvent, useEffect, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import styled from '@emotion/styled';
-import { TAG } from '../api/types';
+import { TAG } from '../api/types.ts';
 import useGetPostById from '../queries/useGetPostById.ts';
 import useCreatePost from '../queries/useCreatePost.ts';
 import useUpdatePostById from '../queries/useUpdatePostById.ts';
