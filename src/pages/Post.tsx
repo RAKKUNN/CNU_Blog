@@ -100,7 +100,7 @@ const Post = () => {
         )}
       </div>
       <ContentsArea>
-        {post.contents.split('\n').map((text, index) => (
+        {post.contents.split('\n').map((text: string, index: number) => (
           <Text key={index}>{text}</Text>
         ))}
       </ContentsArea>
