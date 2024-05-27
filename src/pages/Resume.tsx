@@ -1,5 +1,5 @@
 const Resume = () => {
-  return <div>나는 프로젝트 내역</div>;
+  return <div>Computer Science & Engineering</div>;
 };
 
 export default Resume;
