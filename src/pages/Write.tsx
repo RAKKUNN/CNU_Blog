@@ -2,9 +2,9 @@ import { ChangeEvent, useEffect, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import styled from '@emotion/styled';
 import { TAG } from '../api/types';
-import useGetPostById from '../queries/useGetPostById';
-import useCreatePost from '../queries/useCreatePost';
-import useUpdatePostById from '../queries/useUpdatePostById';
+import useGetPostById from '../queries/useGetPostById.ts';
+import useCreatePost from '../queries/useCreatePost.ts';
+import useUpdatePostById from '../queries/useUpdatePostById.ts';
 
 const TitleInput = styled.input`
   display: block;

@@ -2,8 +2,8 @@ import { useParams, Link } from 'react-router-dom';
 import styled from '@emotion/styled';
 import NotFound from '../components/NotFound';
 import Tag from '../components/Tag';
-import useGetPostById from '../queries/useGetPostById';
-import useDeletePostById from '../queries/useDeletePostById';
+import useGetPostById from '../queries/useGetPostById.ts';
+import useDeletePostById from '../queries/useDeletePostById.ts';
 
 const Title = styled.h1`
   font-size: 3rem;
